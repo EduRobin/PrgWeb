@@ -1,0 +1,32 @@
+
+<body>
+
+
+<div class="container">
+  <form action="action_page.php">
+
+    <label ngModel="name" for="name">First Name</label>
+    <input type="text" id="name" name="name" placeholder="Your name..">
+
+    <label for="email">Your email</label>
+    <input type="text" id="email" name="lastname" placeholder="Your Email..">
+
+
+
+    <label for="subject">Subject</label>
+    <textarea id="subject" name="subject" placeholder="Write something.." style="height:200px"></textarea>
+
+    <input type="submit" (click)="click(name, email, text)" value="Submit">
+
+  </form>
+</div>
+
+</body>
+
+<footer class="footer">
+  <div class="footerContainer">
+    <p class="copyright">© Robin Cavallo 2020</p>
+  </div>
+</footer>
+
+<router-outlet></router-outlet>
